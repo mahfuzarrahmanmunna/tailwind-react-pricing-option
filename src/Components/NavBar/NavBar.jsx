@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Link from './Link';
+import Link from '../Links/Link';
 import { Menu, MonitorX } from 'lucide-react';
 // import Link from './Link';
 
@@ -39,9 +39,9 @@ const NavBar = () => {
         <nav className='flex justify-between lg:px-10 px-2 py-3'>
             <div className='flex gap-2 items-center' >
                 <span onClick={() => setOpen(!open)}>
-                    {open ? <MonitorX /> : <Menu className='lg:hidden' />}
+                    {open ? <MonitorX className='lg:hidden' /> : <Menu className='lg:hidden' />}
                 </span>
-                <ul className={`lg:hidden absolute ${open ? 'top-12' : 'top-64'} duration-75`} >
+                <ul className={`lg:hidden absolute ${open ? 'top-12' : '-top-40'} duration-1000`} >
                     {
                         links
                     }
