@@ -1,5 +1,5 @@
 import React, { use } from 'react';
-import PricingCard from '../Links/PricingCard';
+import PricingCard from '../PricingCard/PricingCard';
 
 const PricingOptions = ({ pricingPromise }) => {
     const pricingData = use(pricingPromise)

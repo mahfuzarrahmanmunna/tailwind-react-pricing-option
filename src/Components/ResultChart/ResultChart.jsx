@@ -20,7 +20,7 @@ const ResultData = [
 const ResultChart = () => {
     return (
         <div>
-            <LineChart width={800} height={400} data={ResultData}>
+            <LineChart lg:width={800} width={350} height={400} data={ResultData}>
                 <XAxis dataKey='Name' />
                 <YAxis />
                 <Line dataKey="Math" stroke="#8884d8" />
